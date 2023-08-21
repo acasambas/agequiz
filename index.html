@@ -1,8 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-
-  </head>
-  <body>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Questionnaire</title>
+<style>
+  body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  #question-container {
+    text-align: center;
+  }
+  .question {
+    font-size: 24px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .options {
+    display: flex;
+    flex-direction: column;
+  }
+  .option {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .option:hover {
+    background-color: #e0e0e0;
+  }
+</style>
+</head>
+<body>
+<div id="question-container">
+  <h1 class="heading">Simple Questionnaire</h1>
+  <div class="question">Question 1: What is 2 + 2?</div>
+  <div class="options">
+    <div class="option">A) 3</div>
+    <div class="option">B) 4</div>
+    <div class="option">C) 5</div>
+    <div class="option">D) 6</div>
+  </div>
+</div>
+<script src="/app.js"></script>
+</body>
 </html>
